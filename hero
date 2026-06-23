@@ -1,0 +1,590 @@
+<!-- wp:html {"lock":{"move":false,"remove":false},"metadata":{"name":"hero"}} -->
+<!-- 
+  Sarah's Nutritive Supplies - Hero Section
+  Single file: HTML + CSS + JS
+  10 second slide duration
+  1.5s fade transition
+-->
+
+<section class="sarah-hero-section" id="sarah-hero">
+  <div class="hero-carousel-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide active" data-slide="0" style="background-image: url('/wp-content/uploads/2026/06/Gemini_Generated_Image_p6vd5fp6vd5fp6vd.png');">
+      <div class="hero-container">
+        <div class="hero-row">
+          <div class="hero-col">
+            <div class="hero-content">
+              <h1 class="hero-title">Natural Herbal Remedies for Better Health</h1>
+              <p class="hero-text">Over 10 years of experience as a Herbal Doctor providing natural and holistic health solutions in Kenya</p>
+              <div class="hero-cta">
+               <a class="vs-btn style1" href="/shop/">Shop Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-left:8px; vertical-align:middle;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76z"/></svg></a> 
+ </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide" data-slide="1" style="background-image: url('/wp-content/uploads/2026/06/slide-2.png');">
+      <div class="hero-container">
+        <div class="hero-row">
+          <div class="hero-col">
+            <div class="hero-content">
+              <h1 class="hero-title">Premium Organic Supplements</h1>
+              <p class="hero-text">Specializing in both preventive and curative health using natural and holistic approaches</p>
+              <div class="hero-cta">
+                <a class="vs-btn style1" href="/shop/">Shop Now<i class="fas fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide" data-slide="2" style="background-image: url('/wp-content/uploads/2026/06/lastslide.png');">
+      <div class="hero-container">
+        <div class="hero-row">
+          <div class="hero-col">
+            <div class="hero-content">
+              <h1 class="hero-title">Pure Natural Remedies for Wellness</h1>
+              <p class="hero-text">Specializing in both preventive and curative health using natural and holistic approaches</p>
+              <div class="hero-cta">
+                <a class="vs-btn style1" href="/shop/">Shop Now<i class="fas fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dot Navigation -->
+  <ul class="hero-dots" role="tablist">
+    <li class="active" role="presentation">
+      <button type="button" aria-label="Slide 1 of 3" aria-selected="true" data-goto="0">1</button>
+    </li>
+    <li role="presentation">
+      <button type="button" aria-label="Slide 2 of 3" aria-selected="false" data-goto="1">2</button>
+    </li>
+    <li role="presentation">
+      <button type="button" aria-label="Slide 3 of 3" aria-selected="false" data-goto="2">3</button>
+    </li>
+  </ul>
+</section>
+
+<style>
+/* ============================================
+   SARAH'S NUTRITIVE SUPPLIES - HERO SECTION
+   ============================================ */
+
+/* ---- Root Variables ---- */
+:root {
+  --theme-color: #47b32d;
+  --theme-color2: #ffcb24;
+  --title-color: #010101;
+  --white-color: #ffffff;
+  --hero-transition: 1.5s;
+  --slide-duration: 10000ms;
+}
+
+/* ---- Section Wrapper ---- */
+.sarah-hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Carousel Container ---- */
+.hero-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+}
+
+/* ---- Individual Slides ---- */
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--hero-transition) ease-in-out,
+              visibility var(--hero-transition) ease-in-out;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* ============================================
+   CONTENT CONTAINER & GRID
+   ============================================ */
+
+.hero-container {
+  position: relative;
+  z-index: 4;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding: 200px 0 200px;
+}
+
+.hero-col {
+  width: 100%;
+  max-width: 75%;
+  flex: 0 0 auto;
+  padding: 0 12px;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.hero-title {
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--white-color);
+  margin: -0.14em 0 25px 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+.hero-text {
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--white-color);
+  margin-bottom: 35px;
+  max-width: 80%;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+/* ============================================
+   CTA BUTTON
+   ============================================ */
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+}
+
+.vs-btn.style1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  background-color: var(--theme-color);
+  color: var(--white-color);
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 10px 10px 10px 38px;
+  border-radius: 40px;
+  border: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.vs-btn.style1::before,
+.vs-btn.style1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme-color2);
+  transition: all 0.5s ease;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.vs-btn.style1::before {
+  transform: rotateX(90deg);
+}
+
+.vs-btn.style1::after {
+  transform: rotateY(90deg);
+}
+
+.vs-btn.style1:hover {
+  color: var(--title-color);
+}
+
+.vs-btn.style1:hover::before {
+  transform: rotateX(0);
+}
+
+.vs-btn.style1:hover::after {
+  transform: rotateY(0);
+}
+
+.vs-btn.style1 i {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+  color: var(--title-color);
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.vs-btn.style1:hover i {
+  background-color: var(--theme-color);
+  color: var(--white-color);
+}
+
+/* ============================================
+   DOT NAVIGATION
+   ============================================ */
+
+.hero-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 2px 0;
+  z-index: 10;
+}
+
+.hero-dots li button {
+  font-size: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.hero-dots li button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  border: 2px solid var(--theme-color);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero-dots li.active button {
+  background-color: var(--theme-color);
+}
+
+.hero-dots li.active button::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-dots li button:hover {
+  background-color: var(--theme-color);
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Large Desktop */
+@media (max-width: 1500px) {
+  .hero-logo-overlay {
+    right: 200px;
+    top: 180px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-logo-overlay {
+    max-width: 140px;
+    right: 100px;
+    top: 150px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-carousel-wrapper {
+    min-height: 500px;
+    max-height: 700px;
+  }
+
+  .hero-row {
+    padding: 160px 0 100px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .hero-logo-overlay {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-carousel-wrapper {
+    min-height: 450px;
+    max-height: 600px;
+  }
+
+  .hero-row {
+    padding: 120px 0 80px;
+  }
+
+  .hero-col {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 25px;
+  }
+
+  .vs-btn.style1 {
+    padding: 8px 8px 8px 28px;
+    font-size: 14px;
+    gap: 22px;
+  }
+
+  .vs-btn.style1 i {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-dots {
+    bottom: 25px;
+    gap: 18px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+  .hero-carousel-wrapper {
+    min-height: 420px;
+  }
+
+  .hero-row {
+    padding: 100px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-dots {
+    bottom: 20px;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1921px) {
+  .hero-carousel-wrapper {
+    max-height: 1000px;
+  }
+
+  .hero-container {
+    max-width: 1520px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    transition: none;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Configuration
+  var SLIDE_DURATION = 10000; // 10 seconds
+  var TRANSITION_SPEED = 1500; // 1.5s CSS transition
+
+  var currentSlide = 0;
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dots li');
+  var totalSlides = slides.length;
+  var autoPlayTimer = null;
+  var isTransitioning = false;
+
+  function showSlide(index) {
+    if (isTransitioning || index === currentSlide) return;
+    isTransitioning = true;
+
+    // Remove active from current
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    dots[currentSlide].querySelector('button').setAttribute('aria-selected', 'false');
+
+    // Add active to new
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    dots[index].querySelector('button').setAttribute('aria-selected', 'true');
+
+    currentSlide = index;
+
+    // Prevent rapid clicking during transition
+    setTimeout(function() {
+      isTransitioning = false;
+    }, TRANSITION_SPEED);
+  }
+
+  function nextSlide() {
+    var next = (currentSlide + 1) % totalSlides;
+    showSlide(next);
+  }
+
+  // Dot click handlers
+  dots.forEach(function(dot, idx) {
+    dot.querySelector('button').addEventListener('click', function() {
+      showSlide(idx);
+      resetAutoPlay();
+    });
+  });
+
+  function resetAutoPlay() {
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(nextSlide, SLIDE_DURATION);
+  }
+
+  // Initialize
+  if (totalSlides > 1) {
+    autoPlayTimer = setInterval(nextSlide, SLIDE_DURATION);
+  }
+
+  // Pause on hover
+  var heroSection = document.getElementById('sarah-hero');
+  if (heroSection) {
+    heroSection.addEventListener('mouseenter', function() {
+      clearInterval(autoPlayTimer);
+    });
+
+    heroSection.addEventListener('mouseleave', function() {
+      resetAutoPlay();
+    });
+  }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight') {
+      var next = (currentSlide + 1) % totalSlides;
+      showSlide(next);
+      resetAutoPlay();
+    } else if (e.key === 'ArrowLeft') {
+      var prev = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(prev);
+      resetAutoPlay();
+    }
+  });
+
+  // Touch/swipe support for mobile
+  var touchStartX = 0;
+  var touchEndX = 0;
+
+  if (heroSection) {
+    heroSection.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    heroSection.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, {passive: true});
+  }
+
+  function handleSwipe() {
+    var swipeThreshold = 50;
+    var diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        var next = (currentSlide + 1) % totalSlides;
+        showSlide(next);
+      } else {
+        var prev = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prev);
+      }
+      resetAutoPlay();
+    }
+  }
+
+  // Expose changeSlide for legacy onclick support
+  window.changeSlide = function(index) {
+    showSlide(index);
+    resetAutoPlay();
+  };
+
+})();
+</script>
+<!-- /wp:html -->
