@@ -1,0 +1,392 @@
+<!-- wp:html {"lock":{"move":false,"remove":false},"metadata":{"name":"welcome"}} -->
+<!--
+  Sarah's Nutritive Supplies - About Section
+  Single file: HTML + CSS + JS
+  Paste into Elementor > Custom HTML widget
+-->
+
+<section class="sns-about" id="sns-about">
+
+  <div class="sns-container">
+
+    <!-- Section heading -->
+    <div class="sns-heading-wrap">
+      <div class="sns-sec-icon-wrap">
+        <img src="/wp-content/uploads/2026/06/logoout-e1781820163452.png" alt="" aria-hidden="true" />
+      </div>
+
+      <span class="sns-sec-subtitle">Welcome to Sarah's Nutritive Supplies</span>
+      <h2 class="sns-sec-title">
+        Your Health, Your Choice<br />
+        Natural &amp; Holistic Care
+      </h2>
+    </div>
+
+    <!-- Row 1: left text + right image -->
+    <div class="sns-row">
+
+      <div class="sns-col-left sns-fade-up">
+        <p class="sns-about-text">
+          Sarah's Nutritive Supplies is a nutritional company operating in Kenya,
+          priding itself in providing our clientele with the best herbal and
+          nutritional remedies and foods with the highest quality and standards
+          yet affordable prices in the market.
+        </p>
+        <p class="sns-about-text sns-mb30">
+          With over 10 years of experience as a Herbal Doctor and certified
+          reflexology therapist, Sarah has worked closely with individuals
+          facing chronic conditions.
+        </p>
+
+        <div class="sns-author">
+          <div class="sns-author-img">
+            <img src="/wp-content/uploads/2026/04/sarah.jpeg" alt="Sarah Njagi" />
+          </div>
+          <div class="sns-author-content">
+            <h4 class="sns-author-name">Sarah Njagi</h4>
+            <span class="sns-author-desig">Founder &amp; Herbal Doctor</span>
+            <img src="/wp-content/uploads/2026/06/signature-1.png" alt="Sarah's signature" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sns-col-right sns-fade-up" style="transition-delay:0.15s">
+        <div class="sns-img-box3">
+          <img
+            class="sns-round"
+            src="https://sarahnutritivesupplies.com/wp-content/uploads/2026/06/kombudan.png"
+            alt="Kombucha remedies"
+          />
+        </div>
+      </div>
+
+    </div><!-- /row 1 -->
+
+    <!-- Row 2: left image + right benefit list -->
+    <div class="sns-row sns-row-align">
+
+      <div class="sns-col-img sns-fade-up">
+        <div class="sns-img-box3i">
+          <img
+            class="sns-round"
+            src="/wp-content/uploads/2026/06/herbal-products.png"
+            alt="Natural herbal products on display"
+          />
+        </div>
+      </div>
+
+      <div class="sns-col-benefits sns-fade-up" style="transition-delay:0.15s">
+        <div class="sns-about-content2">
+          <h3 class="sns-sec-title2">Our Natural Product Benefits</h3>
+          <ul class="sns-list">
+            <li>
+              <img src="/wp-content/uploads/2026/06/logo-no-preveiew.png" alt="" aria-hidden="true" />
+              Premium organic supplements for overall wellness and vitality
+            </li>
+            <li>
+              <img src="/wp-content/uploads/2026/06/logo-no-preveiew.png" alt="" aria-hidden="true" />
+              Natural herbal remedies for preventive and curative health
+            </li>
+            <li>
+              <img src="/wp-content/uploads/2026/06/logo-no-preveiew.png" alt="" aria-hidden="true" />
+              Himalayan salt products for detoxification and mineral balance
+            </li>
+            <li>
+              <img src="/wp-content/uploads/2026/06/logo-no-preveiew.png" alt="" aria-hidden="true" />
+              Traditional herbal teas and spices for daily health maintenance
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /row 2 -->
+
+  </div><!-- /container -->
+</section>
+
+<style>
+/* ============================================================
+   SNS ABOUT SECTION — scoped with sns- prefix to avoid
+   conflicts with other Elementor widgets on the page
+   ============================================================ */
+
+#sns-about {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 90px;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  #sns-about { padding: 80px 0 50px; }
+}
+
+/* Container */
+.sns-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ---- Section heading ---- */
+.sns-heading-wrap {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sns-sec-icon-wrap {
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.sns-sec-icon-wrap::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #47b32d;
+  width: 182px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.sns-sec-subtitle {
+  display: block;
+  color: #47b32d;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 15px;
+}
+.sns-sec-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #010101;
+  line-height: 1.35;
+  text-transform: capitalize;
+  margin: 0 0 18px 0;
+}
+.sns-sec-title2 {
+  font-family: 'Jost', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #010101;
+  line-height: 1.35;
+  margin: -0.25em 0 18px 0;
+}
+@media (max-width: 1199px) {
+  .sns-sec-title  { font-size: 36px; }
+  .sns-sec-title2 { font-size: 30px; }
+}
+@media (max-width: 767px) {
+  .sns-sec-title  { font-size: 28px; }
+  .sns-sec-title2 { font-size: 26px; }
+}
+
+/* ---- Rows ---- */
+.sns-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+}
+.sns-row-align { align-items: center; }
+
+/* ---- Row 1 columns ---- */
+.sns-col-left {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.sns-col-right {
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* ---- Row 2 columns ---- */
+.sns-col-img {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.sns-col-benefits {
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .sns-col-left,
+  .sns-col-right,
+  .sns-col-img,
+  .sns-col-benefits {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ---- About text ---- */
+.sns-about-text {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #4e4d4d;
+  margin-bottom: 18px;
+}
+.sns-mb30 { margin-bottom: 30px !important; }
+
+/* ---- Author card ---- */
+.sns-author {
+  display: flex;
+  gap: 22px;
+}
+.sns-author-img {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 6px;
+  border: 1px solid #c1c1c1;
+  box-shadow: 0 21px 10px 0 rgba(4,4,4,0.05);
+  flex-shrink: 0;
+}
+.sns-author-img img { border-radius: 50%; width: 100%; }
+.sns-author-content { padding-top: 10px; }
+.sns-author-name {
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #010101;
+  margin: 0 0 4px 0;
+}
+.sns-author-desig {
+  display: block;
+  color: #4e4d4d;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* ---- Image box 3 (right col, row 1) ---- */
+.sns-img-box3 {
+  padding-left: 80px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.sns-img-box3::before {
+  content: "";
+  position: absolute;
+  width: 412px;
+  height: 375px;
+  right: -17px;
+  top: -17px;
+  background-color: #ffcb24;
+  border-radius: 0 30px 0 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .sns-img-box3 { padding-left: 0; }
+  .sns-img-box3::before { display: none; }
+}
+
+/* ---- Image box 3i (left col, row 2) ---- */
+.sns-img-box3i {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.sns-img-box3i::before {
+  content: "";
+  position: absolute;
+  width: 246px;
+  height: 310px;
+  background-color: #ffcb24;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -14px;
+  z-index: -1;
+  border-radius: 40px 0 0 40px;
+}
+@media (max-width: 1199px) {
+  .sns-img-box3i::before { display: none; }
+}
+
+/* ---- Shared image style ---- */
+.sns-round { border-radius: 30px; max-width: 100%; height: auto; display: block; }
+
+/* ---- About content 2 ---- */
+.sns-about-content2 { padding-left: 94px; }
+@media (max-width: 1199px) { .sns-about-content2 { padding-left: 0; } }
+
+/* ---- Benefits list ---- */
+.sns-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sns-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  color: #4e4d4d;
+  margin-bottom: 12px;
+}
+.sns-list li:last-child { margin-bottom: 0; }
+.sns-list li img {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: 3px solid #f0bb10;
+  background-color: #ffcb24;
+  flex-shrink: 0;
+  object-fit: contain;
+  padding: 6px;
+}
+@media (max-width: 767px) {
+  .sns-list li { font-size: 15px; gap: 12px; }
+}
+
+/* ---- Scroll fade-in ---- */
+.sns-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.sns-fade-up.sns-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sns-fade-up { opacity: 1; transform: none; transition: none; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var els = document.querySelectorAll('.sns-fade-up');
+  if (!els.length) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('sns-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  els.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+<!-- /wp:html -->
